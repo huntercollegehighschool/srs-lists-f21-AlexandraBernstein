@@ -5,4 +5,5 @@ PROGRAM 2
 Define a function odd_reverse that takes a list as an argument. The function creates a new list containing only the elements in the odd indices (indices 1, 3, 5, ...) and then reverses it. The function returns that list.
 '''
 def odd_reverse(lst):
-  pass #delete this line when you start writing your code
+  lst = lst[1::2] #start value=1, stop value will always be len(lst)+1 because it takes 1 less than the value, and an interval of 2
+  return lst[::-1] #changing the interval to -1
